@@ -26,17 +26,28 @@
 
 
 
-
-def find_max_num(array):
-    max_num = array[0]
-    print('max_num : ', max_num)
-    for num in array:
-        if num > max_num:
-            max_num = num
-    return max_num
-
-
-
-print("정답 = 6 / 현재 풀이 값 = ", find_max_num([3, 5, 6, 1, 2, 4]))
+#
+# def find_max_num(array):
+#     max_num = array[0]
+#     print('max_num : ', max_num)
+#     for num in array:
+#         if num > max_num:
+#             max_num = num
+#     return max_num
+#
+#
+#
+# print("정답 = 6 / 현재 풀이 값 = ", find_max_num([3, 5, 6, 1, 2, 4]))
 # print("정답 = 6 / 현재 풀이 값 = ", find_max_num([6, 6, 6]))
 # print("정답 = 1888 / 현재 풀이 값 = ", find_max_num([6, 9, 2, 7, 1888]))
+
+def function_MAX_NUM(arrayNum):
+    firstArray = arrayNum[0]
+    for find_max_num in arrayNum:
+        if(firstArray < find_max_num):
+            firstArray = find_max_num
+    return firstArray
+
+
+print (function_MAX_NUM([1,2,3,4,5,6,10,20,40,7,2,32]))
+
